@@ -162,7 +162,7 @@ table {
     want to leave anybody behind.
 */
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   min-height: 740px;
 
   /* background: rgb(215, 215, 215);
@@ -172,7 +172,8 @@ body {
   background: -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
   background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
   background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190)); */
-  background: linear-gradient(to bottom, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%);
+  /* background: linear-gradient(to bottom, #feffff 0%, #ddf1f9 35%, #a0d8ef 100%); */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('../img/bg.jpg');
 }
 
 /*
@@ -810,4 +811,32 @@ td {
   font-size: 1rem;
   border: 2px solid black;
   padding: 10px;
+}
+.triangle img {
+  width: 600px;
+  max-height: 100%;
+}
+
+.triangle {
+  position: relative;
+}
+
+.triangle-one {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  transform: rotate(300deg);
+}
+
+.triangle-two {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: rotate(60deg);
+}
+
+.triangle-three {
+  position: absolute;
+  top: 60%;
+  left: 23%;
 }
