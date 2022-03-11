@@ -800,7 +800,7 @@ ul > li {
 }
 
 .slide-image img {
-  max-width: 300px;
+  max-width: 320px;
   max-height: 100%;
   border-radius: 1%;
   margin: 1%;
@@ -843,9 +843,10 @@ td {
 .first-slide {
   text-align: center;
   position: relative;
-  transform: translateY(-100px);
+  transform: translateY(-75px);
   background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url('../img/bg1.jpg');
   padding: 3%;
   border-radius: 2%;
   box-shadow: 1px 1px 3px grey;
+  padding-bottom: 8%;
 }
