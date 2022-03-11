@@ -34,7 +34,18 @@
       data-perspective="1000"
       data-autoplay="0"
     >
-      <div class="step slide" data-x="-1000" data-y="-1500">
+      <div id="bored" class="step" data-x="-2000" data-y="-1500">
+        <div class="first-slide">
+          <p>Дополнительная общеобразовательная общеразвивающая программа</p>
+          <p style="color: red"><b>«Мир военной топографии»</b></p>
+          <p><i>решение кейса:</i></p>
+          <p>
+            <i> <b>«Эх, путь дорожка»</b> </i>
+          </p>
+        </div>
+      </div>
+
+      <div class="step" data-x="-1000" data-y="-1500" style="font-size: 2rem">
         <h1
           style="
             font-size: 150%;
@@ -54,31 +65,18 @@
         <p style="text-align: justify; margin-top: 20px">Дефицит практических навыков ориентирования по картам.</p>
       </div>
 
-      <!--
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        
-        So in the example below it'll be `step-2`.
-        
-        The hash part of the url when this step is active will be `#/step-2`.
-        
-        You can also use `#step-2` in a link, to point directly to this particular step.
-        
-        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-        
-    -->
-      <div class="step slide" data-x="0" data-y="-1500">
-        <p style="text-align: center; color: black;"> <b>Задачи</b></pз>
+      <div class="step" data-x="0" data-y="-1500" style="font-size: 2rem">
+        <p style="text-align: center; color: black"><b>Задачи</b></p>
         <ol style="list-style: decimal">
-          <li style="margin-top: 20px; text-align: justify;">
+          <li style="margin-top: 20px; text-align: justify">
             Создание условий для самореализации обучающихся, формирования их военно-профессиональной направленности,
             через вовлечение обучающихся в исследовательскую деятельность в рамках работы туристско-краеведческого
             кружка военно-профессиональной направленности.
           </li>
-          <li style="margin-top: 20px; text-align: justify;">Содействие развитию у обучающихся деятельностных компетенций в области военной топографии.</li>
-          <li style="margin-top: 20px; text-align: justify;">
+          <li style="margin-top: 20px; text-align: justify">
+            Содействие развитию у обучающихся деятельностных компетенций в области военной топографии.
+          </li>
+          <li style="margin-top: 20px; text-align: justify">
             Развитие первоначальных знаний и навыков работы по специальностям военной службы посредством реализации
             стажировочных проб в рамках летней учебной практики, социального партнерства с высшими военными
             образовательными организациями Минобороны России.
@@ -88,43 +86,24 @@
 
       <div class="step" data-x="1000" data-y="-1500">
         <div class="triangle">
-          <img src="img/triangle.png" alt="triangle">
+          <img src="img/triangle.png" alt="triangle" />
           <div class="triangle-one">Модель</div>
           <p class="triangle-two">планируемого</p>
           <p class="triangle-three">результата</p>
         </div>
-        
       </div>
 
-      <!--
-        
-        This is an example of step element being scaled.
-        
-        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
-        element will be 4 times larger than the others.
-        From presentation and transitions point of view it means, that it will have to be scaled
-        down (4 times) to make it back to its correct size.
-        
-    -->
       <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <p style="text-align: justify;">
+        <p style="text-align: justify">
           Выявлены и экспериментально обоснованы условия, методы и приемы формирования деятельностных компетенций
           обучающихся посредством организации туристско-краеведческого кружка военно-профессиональной направленности.
         </p>
       </div>
 
-      <!--
-        
-        This element introduces rotation.
-        
-        Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-        element should be rotated by 90 degrees clockwise.
-        
-    -->
       <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p style="text-align: justify;">
-          Разработаны маршруты учебных троп, к которым были составлены примеры исследований и
-          практико-ориентированных заданий.
+        <p style="text-align: justify">
+          Разработаны маршруты учебных троп, к которым были составлены примеры исследований и практико-ориентированных
+          заданий.
         </p>
       </div>
 
@@ -135,56 +114,28 @@
         </p>
       </div>
 
-      <!--
-        
-        And now it gets really exciting! We move into third dimension!
-        
-        Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
-        `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
-        positioned far away from us (by 3000px).
-        
-    -->
       <div class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p  style="text-align: justify;">
+        <p style="text-align: justify">
           Созданы условия для прохождения стажировочных проб в рамках летней учебной практики на базе высших учебных
           заведений Минобороны России.
         </p>
       </div>
 
-      <!--
-        
-        This step here doesn't introduce anything new when it comes to data attributes, but you
-        should notice in the demo that some words of this text are being animated.
-        It's a very basic CSS transition that is applied to the elements when this step element is
-        reached.
-        
-        At the very beginning of the presentation all step elements are given the class of `future`.
-        It means that they haven't been visited yet.
-        
-        When the presentation moves to given step `future` is changed to `present` class name.
-        That's how animation on this step works - text moves when the step has `present` class.
-        
-        Finally when the step is left the `present` class is removed from the element and `past`
-        class is added.
-        
-        So basically every step element has one of three classes: `future`, `present` and `past`.
-        Only one current step has the `present` class.
-        
-        Note: data-x/y/z attributes, if not defined, by default will inherit the value of the 
-        previous step. So to get back to 0 on the z-axis, we must set it to 0.
-        See src/plugins/rel/README.md for more information.
-        
-    -->
       <div class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="2">
-        <h3 style="text-align: center">Необходимые ресурсы для <br> решения задач</h3>
+        <h3 style="text-align: center">
+          Необходимые ресурсы для <br />
+          решения задач
+        </h3>
         <ol style="list-style: decimal; font-size: 2rem">
-          <li style="text-align: justify;">
+          <li style="text-align: justify">
             Организованное межсетевое взаимодействие и социальное партнерство с высшими военными образовательными
             организациями Министерства обороны Российской Федерации; с региональным отделом русского географического
             общества; всероссийской туристско-краеведческим движением обучающихся «Отечество».
           </li>
-          <li style="text-align: justify;">Подготовленные высококвалифицированные кадры в области военной топографии.</li>
-          <li style="text-align: justify;">Организованные стажировочные пробы в рамках летней учебной практики.</li>
+          <li style="text-align: justify">
+            Подготовленные высококвалифицированные кадры в области военной топографии.
+          </li>
+          <li style="text-align: justify">Организованные стажировочные пробы в рамках летней учебной практики.</li>
         </ol>
       </div>
 
@@ -195,9 +146,13 @@
 
             <p>1. Организация работы деятельности кружка:</p>
             <ul style="list-style-type: circle">
-              <li style="text-align: justify; margin-left: 60px;">анализ и подготовка материально-технической базы, кадрового состава</li>
-              <li style="text-align: justify; margin-left: 60px;">разработка дополнительной общеобразовательная общеразвивающей программы «Мир военной топографии»</li>
-              <li style="text-align: justify; margin-left: 60px;">
+              <li style="text-align: justify; margin-left: 60px">
+                анализ и подготовка материально-технической базы, кадрового состава
+              </li>
+              <li style="text-align: justify; margin-left: 60px">
+                разработка дополнительной общеобразовательная общеразвивающей программы «Мир военной топографии»
+              </li>
+              <li style="text-align: justify; margin-left: 60px">
                 проведение информационно-разъяснительной работы с обучающимися и их родителями (законными
                 представителями)
               </li>
@@ -212,15 +167,15 @@
           <div class="slide-text">
             <p>2. Реализация программы:</p>
             <ul style="list-style-type: circle">
-              <li style="text-align: justify; margin-left: 60px;">
-                проведение анкетирования, викторин, опросов, конкурсов, соревнований, экспедиций, презентаций, практикумов, выездов на
-                полигоны, участие в летней практике, географическом диктанте, олимпиадах
+              <li style="text-align: justify; margin-left: 60px">
+                проведение анкетирования, викторин, опросов, конкурсов, соревнований, экспедиций, презентаций,
+                практикумов, выездов на полигоны, участие в летней практике, географическом диктанте, олимпиадах
               </li>
-              <li  style="text-align: justify; margin-left: 60px;">
+              <li style="text-align: justify; margin-left: 60px">
                 изучение промежуточных результатов реализации программы, организация промежуточного контроля, при
                 необходимости принятие дополнительных решений для достижения задач
               </li>
-              <li  style="text-align: justify; margin-left: 60px;">
+              <li style="text-align: justify; margin-left: 60px">
                 обеспечение необходимой наполняемости групп и поддержание мотивации обучающихся к изучению военной
                 топографии
               </li>
@@ -234,91 +189,95 @@
       </div>
 
       <div class="step" data-x="6700" data-y="300" data-scale="2">
-        <div class=""slide-container slide-container--column">
-        <div class="slide-text">
-          <p>3. Оценка результата:</p>
-          <ul style="list-style-type: circle">
-            <li style="text-align: justify; margin-left: 60px;">мониторинг выполнения планируемых результатов</li>
-            <li style="text-align: justify; margin-left: 60px;">защита индивидуального проекта</li>
-          </ul>
-        </div>
-        <div class="slide-image slide-image--row">
-          <img src="img/3-1.jpg" alt="2-1" />
-          <img src="img/3-2.jpg" alt="2-2" />
-        </div>
-      </div>
-    </div>
-
-    <div class="step" data-x="7800" data-y="2100" data-rotate="20" data-scale="4">
-      <p style="text-align: center;">Возможные противоречия и риски</p>
-      <table style="font-size: 1rem; border: 1px solid black; padding: 10px">
-        <tr>
-          <th>Название этапа</th>
-          <th>Проблемные вопросы</th>
-          <th>Пути решения</th>
-        </tr>
-        <tr>
-          <td rowspan="3">Организация работы деятельности кружка</td>
-          <td>недостаточное материально-техническое обеспечение</td>
-          <td>планирование в закупке необходимого оборудования</td>
-        </tr>
-        <tr>
-          <td>отсутствие кадрового состава</td>
-          <td>
-            привлечение молодых специалистов, поддержание инициативы и творчества педагога, курсы профессиональной
-            переподготовки
-          </td>
-        </tr>
-        <tr>
-          <td>отсутствие желания родителей (законных представителей)</td>
-          <td>проведение информационно-разъяснительной работы, обеспечение успешности каждого обучающегося</td>
-        </tr>
-        <tr>
-          <td>Реализация программы</td>
-          <td>недостаточный интерес у обучающихся, отсутствие мотивации</td>
-          <td>увеличение практико-ориентированной направленности занятий (выезды, экскурсии, путешествия и др.)</td>
-        </tr>
-        <tr>
-          <td>Оценка результата</td>
-          <td>полученные результаты не соответствуют ожидаемым</td>
-          <td>систематическое отслеживание промежуточных результатов; проработка проблемных зон</td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="step" data-x="6000" data-y="4000" data-scale="2">
-      <div class="slide-container">
-        <div class="slide-text" style="font-size: 1.2rem">
-          <p style="font-size: 2rem"><b>Прогноз:</b></p>
-          <ul style="list-style: decimal;">
-            <li>готовность и способность обучающихся к саморазвитию, сформированность основ российской, гражданской
-            идентичности;</li>
-            <li>готовность к служению Отечеству, его защите;</li>
-            <li>умение читать топографические карты (знаки),
-            выполнять простейшие измерения по ним, определять свое местонахождение, ориентироваться на местности,
-            знакомится с разновидностями и тактическими свойствами местности и ее влиянием на боевые действия войск,
-            составлять схемы маршрутов и двигаться по ним, наносить тактическую обстановку, совершать движение по
-            азимуту с картой днем и ночью;</li>
-            <li>сбор, обработка и распространение достоверных общемировых и национальных
-            географических, экологических, этнографических и статистических сведений в России и за рубежом;</li>
-               
-          </ul>
-          <p>
-            <b
-              >Интерес к военной профессии. Успешность обучения в высших профильных образовательных организациях
-              Минобороны России.
-            </b>
-          </p>
-        </div>
-        <div class="slide-image">
-          <img src="img/4-1.jpg" alt="2-1" />
-          <img src="img/4-2.jpg" alt="2-2" />
-          <img src="img/4-3.jpg" alt="2-2" />
+        <div class="slide-container slide-container--column">
+          <div class="slide-text">
+            <p>3. Оценка результата:</p>
+            <ul style="list-style-type: circle">
+              <li style="text-align: justify; margin-left: 60px">мониторинг выполнения планируемых результатов</li>
+              <li style="text-align: justify; margin-left: 60px">защита индивидуального проекта</li>
+            </ul>
+          </div>
+          <div class="slide-image slide-image--row">
+            <img src="img/3-1.jpg" alt="2-1" />
+            <img src="img/3-2.jpg" alt="2-2" />
+          </div>
         </div>
       </div>
-    </div>
 
-    <!--
+      <div class="step" data-x="7800" data-y="2100" data-rotate="20" data-scale="4">
+        <p style="text-align: center">Возможные противоречия и риски</p>
+        <table style="font-size: 1rem; border: 1px solid black; padding: 10px">
+          <tr>
+            <th>Название этапа</th>
+            <th>Проблемные вопросы</th>
+            <th>Пути решения</th>
+          </tr>
+          <tr>
+            <td rowspan="3">Организация работы деятельности кружка</td>
+            <td>недостаточное материально-техническое обеспечение</td>
+            <td>планирование в закупке необходимого оборудования</td>
+          </tr>
+          <tr>
+            <td>отсутствие кадрового состава</td>
+            <td>
+              привлечение молодых специалистов, поддержание инициативы и творчества педагога, курсы профессиональной
+              переподготовки
+            </td>
+          </tr>
+          <tr>
+            <td>отсутствие желания родителей (законных представителей)</td>
+            <td>проведение информационно-разъяснительной работы, обеспечение успешности каждого обучающегося</td>
+          </tr>
+          <tr>
+            <td>Реализация программы</td>
+            <td>недостаточный интерес у обучающихся, отсутствие мотивации</td>
+            <td>увеличение практико-ориентированной направленности занятий (выезды, экскурсии, путешествия и др.)</td>
+          </tr>
+          <tr>
+            <td>Оценка результата</td>
+            <td>полученные результаты не соответствуют ожидаемым</td>
+            <td>систематическое отслеживание промежуточных результатов; проработка проблемных зон</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="step" data-x="6000" data-y="4000" data-scale="2">
+        <div class="slide-container">
+          <div class="slide-text" style="font-size: 1.2rem">
+            <p style="font-size: 2rem"><b>Прогноз:</b></p>
+            <ul style="list-style: decimal">
+              <li>
+                готовность и способность обучающихся к саморазвитию, сформированность основ российской, гражданской
+                идентичности;
+              </li>
+              <li>готовность к служению Отечеству, его защите;</li>
+              <li>
+                умение читать топографические карты (знаки), выполнять простейшие измерения по ним, определять свое
+                местонахождение, ориентироваться на местности, знакомится с разновидностями и тактическими свойствами
+                местности и ее влиянием на боевые действия войск, составлять схемы маршрутов и двигаться по ним,
+                наносить тактическую обстановку, совершать движение по азимуту с картой днем и ночью;
+              </li>
+              <li>
+                сбор, обработка и распространение достоверных общемировых и национальных географических, экологических,
+                этнографических и статистических сведений в России и за рубежом;
+              </li>
+            </ul>
+            <p>
+              <b
+                >Интерес к военной профессии. Успешность обучения в высших профильных образовательных организациях
+                Минобороны России.
+              </b>
+            </p>
+          </div>
+          <div class="slide-image">
+            <img src="img/4-1.jpg" alt="2-1" />
+            <img src="img/4-2.jpg" alt="2-2" />
+            <img src="img/4-3.jpg" alt="2-2" />
+          </div>
+        </div>
+      </div>
+
+      <!--
         
         And the last one shows full power and flexibility of impress.js.
         
@@ -330,27 +289,27 @@
         as `data-rotate` (these two are basically aliases).
         
     -->
-    <div
-      id="its-in-3d"
-      class="step"
-      data-x="8200"
-      data-y="4300"
-      data-z="-100"
-      data-rotate-x="-40"
-      data-rotate-y="10"
-      data-scale="2"
-    >
-      <div style="font-size: 2rem">
-        <p style="text-align: center;"><b>Рефлексия проведенной работы:</b></p>
-        <ol style="list-style: decimal">
-          <li>Сплочение команды.</li>
-          <li>Повышение методического уровня и интереса к решению поставленной задачи.</li>
-          <li>Развитие <b>дивергентного мышления</b> у участников.</li>
-        </ol>
+      <div
+        id="its-in-3d"
+        class="step"
+        data-x="8200"
+        data-y="4300"
+        data-z="-100"
+        data-rotate-x="-40"
+        data-rotate-y="10"
+        data-scale="2"
+      >
+        <div style="font-size: 2rem">
+          <p style="text-align: center"><b>Рефлексия проведенной работы:</b></p>
+          <ol style="list-style: decimal">
+            <li>Сплочение команды.</li>
+            <li>Повышение методического уровня и интереса к решению поставленной задачи.</li>
+            <li>Развитие <b>дивергентного мышления</b> у участников.</li>
+          </ol>
+        </div>
       </div>
-    </div>
 
-    <!--
+      <!--
         
         So to summarize of all the possible attributes used to position presentation steps, we have:
         
@@ -365,8 +324,8 @@
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
     -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10"></div>
-
+      <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10"></div>
+    </div>
     <!--
     This is a UI plugin. You can read more about plugins in src/plugins/README.md.
     For now, I'll just tell you that this adds some graphical controls to navigate the

@@ -683,7 +683,7 @@ a:focus {
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 200px;
+  bottom: 100px;
 
   background: rgba(0, 0, 0, 0.5);
   color: #eee;
@@ -839,4 +839,13 @@ td {
   position: absolute;
   top: 60%;
   left: 23%;
+}
+.first-slide {
+  text-align: center;
+  position: relative;
+  transform: translateY(-100px);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url('../img/bg1.jpg');
+  padding: 3%;
+  border-radius: 2%;
+  box-shadow: 1px 1px 3px grey;
 }
